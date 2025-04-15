@@ -1,5 +1,4 @@
 import { Category, EasyFast, Intro, Partners, Testimonials, TopSeling } from "@/components"
-
 const page = () => {
   return (
     <>

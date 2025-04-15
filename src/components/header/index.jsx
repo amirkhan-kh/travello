@@ -1,17 +1,24 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { Select } from "antd";
 import { usePathname } from "next/navigation";
-import React, { useTransition } from "react";
 import "./_style.scss";
+import "../../lang/i18n";
 import { useTranslation } from "react-i18next";
+import ThemeToggle from "@/ui/toggle-button";
 const Header = () => {
-  const {t} = useTranslation()
+  const { t, i18n } = useTranslation();
   const pathname = usePathname();
+
+  const changeLanguage = (e) => {
+    i18n.changeLanguage(e.target.value);
+  };
   return (
-    <header className="py-4 ">
+    <header className="">
       <div className="container mx-auto ">
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-between  ">
           <div className="logo">
             <Image
               src={"/icon/smalltop.svg"}
@@ -40,7 +47,7 @@ const Header = () => {
           <ul className="flex items-center gap-16">
             <li>
               <Link className={`${pathname === "/" ? "active" : ""}`} href="/">
-              {t('destinations')}
+                {t("destinations")}
               </Link>
             </li>
             <li>
@@ -70,11 +77,19 @@ const Header = () => {
           </ul>
           {/* <div className="box"></div> */}
           <div className="flex items-center gap-3" id="navBtns">
-            <button>Login</button>
-            <button>Sign up</button>
-            <select name="" id="">
-              <option value="">Uz</option>
-            </select>
+            <button>{t("login")}</button>
+            <button>{t("signup")}</button>
+            <ThemeToggle />
+            <Select
+              defaultValue={i18n.language}
+              style={{ width: 60,}}
+              onChange={(value) => i18n.changeLanguage(value)}
+              options={[
+                { value: "uz", label: "Uz" },
+                { value: "en", label: "En" },
+                { value: "ru", label: "Ru" },
+              ]}
+            />
           </div>
         </nav>
       </div>

@@ -1,5 +1,8 @@
 header{
-    background-color: transparent;
+    position: absolute;
+    z-index: 111;
+    width: 100%;
+    margin-top: 20px;
     nav{
         .active{
             font-weight: 800;
