@@ -35,8 +35,15 @@ i18n.use(initReactI18next).init({
         sellingMap1: "10 kunlik sayohat",
         sellingMap2: "10 kunlik sayohat",
         sellingMap3: "28 kunlik sayohat",
-
-
+        //top selling
+        eTop: "EOson va Tez",
+        eTitle: "Keyingi sayohatingizni bron qiling",
+        ecard1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+        eCard2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+        eCard3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+        eRightT: "Gretsiyaga sayohat",
+        input: "Ma'lumot, so'nggi yangiliklar va boshqalarni olish uchun obuna qiziqarli takliflar",
+        placeholder: "Sizning elektron pochtangiz",
       },
     },
     
@@ -68,10 +75,18 @@ i18n.use(initReactI18next).init({
         //category end
         top: "Top Selling",
         title: "Top Destinations",
-       
         sellingMap1: "10 Days Trip",
         sellingMap2: "10 Days Trip",
         sellingMap3: "28 Days Trip",
+        //top selling
+        eTop: "Easy and Fast",
+        eTitle: "Book your next trip in 3 easy steps",
+        ecard1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+        eCard2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+        eCard3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+        eRightT: "Trip To Greece",
+        input: "Subscribe to get information, latest news and otherinteresting offers about Jadoo",
+        placeholder: "",
 
       },
     },
@@ -85,7 +100,7 @@ i18n.use(initReactI18next).init({
         signup: "Регистрация",
         // header end
         intrH3: "Best Destinations around the world",
-        introH2: "Путешествуйте,  полной жизнью",
+        introH2: "Путшествуйте и полной жизнью",
         introP: "Построенный Wicket ртсменов он поглощен прослушиванием. Парк ворота продают они запад трудно для.",
         introBtn1: "Узнать больше",
         introBtn2: "Играть в демо",
@@ -103,10 +118,19 @@ i18n.use(initReactI18next).init({
         //category end
         top: "Топ продаж",
         title: "Мы Лучшие направления лучшие услуги",
-        
         sellingMap1: "10-дневная поездка",
         sellingMap2: "10-дневная поездка",
         sellingMap3: "28-дневная поездка",
+        //top selling
+        eTop: "Легко и быстро",
+        eTitle: "Забронируйте следующую простых шага",
+        ecard1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+        eCard2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+        eCard3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+        eRightT: "Поездка в Грецию",
+        input: "Подпишитесь, чтобы получать информацию, последние  интересные предложения о Jadoo",
+        placeholder: "Ваш адрес электронной почты",
+
       },
     },
   },

@@ -1,4 +1,4 @@
-import { Category, EasyFast, Intro, Partners, Testimonials, TopSeling } from "@/components"
+import { Category, EasyFast, Intro, Partners,  TopSeling } from "@/components"
 const page = () => {
   return (
     <>
@@ -6,7 +6,6 @@ const page = () => {
       <Category/>
       <TopSeling/>
       <EasyFast/>
-      <Testimonials/>
       <Partners/>
     </>
   )

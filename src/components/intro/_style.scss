@@ -11,3 +11,28 @@
   }
   
 }
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px); // 16px yuqoriga
+  }
+}
+
+@keyframes floatDownUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(16px); // 16px pastga
+  }
+}
+
+#air1 {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+#air2 {
+  animation: floatDownUp 3s ease-in-out infinite;
+}

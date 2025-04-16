@@ -27,6 +27,7 @@ const Intro = () => {
             {t("introP")}
           </p>
           </Reval>
+          <Reval>
           <div className="flex items-center pt-5 gap-8 flex-wrap">
             <button className="bg-[#DF6951] text-white px-6 py-3 rounded-full font-semibold text-sm hover:opacity-90 transition">
               {t("introBtn1")}
@@ -42,6 +43,7 @@ const Intro = () => {
             </div>
            
           </div>
+          </Reval>
         </div>
 
         <div className='w-full md:w-[50%] relative h-[500px] md:h-[600px]'>
@@ -60,6 +62,8 @@ const Intro = () => {
             className="absolute top-[170px] left-0 z-10 object-contain"
           />
           <Image 
+            id='air1'
+
             src="/img/plane.png" 
             alt="Plane 1" 
             width={130} 
@@ -67,6 +71,8 @@ const Intro = () => {
             className="absolute top-[140px]  z-20 object-contain"
           />
           <Image 
+            id='air2'
+
             src="/img/plane.png" 
             alt="Plane 2" 
             width={130} 

@@ -1,0 +1,104 @@
+@keyframes rotateClockwise {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes rotateCounter {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes borderColorChange {
+  0%   { border-color: #6246E5; }
+  25%  { border-color: #FF7D68; }
+  50%  { border-color: #59B1E6; }
+  75%  { border-color: #34D399; }
+  100% { border-color: #6246E5; }
+}
+
+@keyframes pulseSize {
+  0%, 100% {
+    transform: scale(1) rotate(90deg);
+    border-radius: 50%;
+  }
+  50% {
+    transform: scale(1.15) rotate(90deg);
+    border-radius: 45%;
+  }
+}
+
+.list {
+  border-radius: 180px 0px 0px 0px;
+  margin-top: 200px;
+  overflow: hidden;
+
+  input {
+    background: #ffffff;
+    padding: 8px 18px;
+    border-radius: 10px;
+    width: 300px;
+    color: #14183E;
+    &.dark {
+      background: #3A3A3C;
+      color: white;
+    }
+  }
+
+  button {
+    background: #FF7D68;
+    padding: 8px 18px;
+    border-radius: 10px;
+    color: #ffffff;
+    &.dark {
+      background: #FF7D68;
+      color: white;
+    }
+  }
+
+  .leftImg {
+    width: 100%;
+    height: 340px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .circle {
+      position: absolute;
+      border: 2px solid #6246E5;
+      transform-origin: center;
+      animation: borderColorChange 5s infinite ease-in-out, pulseSize 4s infinite ease-in-out;
+    }
+
+    @for $i from 1 through 6 {
+      .circle:nth-child(#{$i}) {
+        width: 80px + ($i * 40px);
+        height: 80px + ($i * 40px);
+        margin-left: -50px;
+        animation-delay: $i * 0.3s;
+      }
+    }
+  }
+
+  .leftImg:nth-of-type(1) {
+    animation: rotateClockwise 40s linear infinite;
+  }
+
+  .leftImg:nth-of-type(2) {
+    animation: rotateCounter 40s linear infinite;
+  }
+
+  /* Dark mode styles */
+  &.dark {
+    background-color: #1E1E1E;
+    color: white;
+
+    .circle {
+      border-color: #FF7D68;
+    }
+
+    input, button {
+      color: white;
+    }
+  }
+}

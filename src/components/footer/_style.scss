@@ -1,0 +1,30 @@
+footer{
+    margin-bottom: 80px;
+    .logo{
+        width: 133px;
+        position: relative;
+        h1{
+            font-size: 29px;
+            font-weight: 800;
+            line-height: 28px;
+        }
+    }
+    p{
+        color: #5E6282;
+        font-size: 15px;
+    }
+    ul{
+        span{
+            color: #080809;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        li{
+            a{
+                font-size: 16px;
+                color: #5E6282;
+            }
+        }
+    }
+}
